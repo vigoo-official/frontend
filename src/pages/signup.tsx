@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import { Link } from "react-router-dom"
 import { SIGN_IN } from "../routes";
 
@@ -7,7 +7,7 @@ function SignUpPage() {
     return (
         <>
             <h1>Sign Up</h1>
-            <Link to={SIGN_IN}/>
+            <Link to={SIGN_IN}>Sign In</Link>
         </>
     );
 }
