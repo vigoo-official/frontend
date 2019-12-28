@@ -1,9 +1,11 @@
-import React from "react"
+import React from "react";
+import { UiView } from "../../routing/ui";
+import appRoutes from "../../routes";
 
 const App = function () {
 
     return (
-        <p>App</p>
+        <UiView routes={appRoutes} />
     )
 }
 
