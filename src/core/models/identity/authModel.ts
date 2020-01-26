@@ -1,6 +1,6 @@
 import { ModelException } from "../../exceptions/modelException";
 import { createErrorsDefinder } from "../../helpers/modelErrorsBuilder";
-import { IApplicationErrorsCodes } from "../../interfaces/IApplicationErrorsCodes";
+import { IApplicationErrorsCodes } from "../../interfaces";
 import { AuthModel } from "./types";
 
 export default function buildAuthModelCreator({
