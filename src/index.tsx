@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter } from "react-router-dom"
-import App from "./containers/app"
+import App from "./frameworks/site/containers/app"
 
 ReactDOM.render(
     <BrowserRouter>

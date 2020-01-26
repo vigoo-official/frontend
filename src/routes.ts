@@ -1,7 +1,7 @@
-import NotFoundPage from "./pages/notfound";
-import SignInPage from "./pages/signin";
-import SignUpPage from "./pages/signup";
-import { RouteConfig } from "./routing";
+import NotFoundPage from "./frameworks/site/pages/notfound";
+import SignInPage from "./frameworks/site/pages/signin";
+import SignUpPage from "./frameworks/site/pages/signup";
+import { RouteConfig } from "./frameworks/site/routing";
 
 export const getHomeRoute = () => '/';
 export const getSignUpRoute = () => '/signup';
@@ -9,7 +9,7 @@ export const getNotFoundRoute = () => '/not-found';
 
 const notFoundPath = getNotFoundRoute();
 
-const appRoutes : RouteConfig[] = [
+const appRoutes: RouteConfig[] = [
     {
         path: getSignUpRoute(),
         component: SignUpPage,

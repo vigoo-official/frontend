@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route as ReactRoute, Switch } from "react-router-dom";
+import { Redirect, Route as ReactRoute, Switch } from "../frameworks/site/pages/node_modules/react-router-dom";
 import { Redirect as RedirectType, Route, UiRouteProps } from "./types";
 
 export const UiView = (props: UiRouteProps) => {
@@ -12,7 +12,7 @@ export const UiView = (props: UiRouteProps) => {
                 return (
                     <ReactRoute exact={route.exact} key={route.path}
                         path={route.path}
-                        render={(props) => {
+                        render={(props: any) => {
                             return <route.component {...props} routes={route.children || []} />
                         }}
                     />

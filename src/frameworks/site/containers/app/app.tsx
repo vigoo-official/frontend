@@ -1,6 +1,6 @@
 import React from "react";
+import appRoutes from "../../../../routes";
 import { UiView } from "../../routing/ui";
-import appRoutes from "../../routes";
 
 const App = function () {
 

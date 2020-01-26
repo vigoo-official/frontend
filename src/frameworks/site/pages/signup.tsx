@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import React from "react";
-import { getHomeRoute } from "../routes";
+import { Link } from "react-router-dom";
+import { getHomeRoute } from "../../../routes";
 
 function SignUpPage() {
 
