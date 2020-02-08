@@ -1,7 +1,7 @@
-import { createAuthModel } from "../../core";
+import { createAuthModel } from "../../di/core";
 import { IHttpClient } from "../interfaces";
 
-export default function createLoginUseCase({
+export default function buildLoginUseCase({
     http,
 }: {
     http: IHttpClient,
@@ -12,8 +12,12 @@ export default function createLoginUseCase({
                 username,
                 password,
             });
-        } catch (e) {
 
+            var response = await http.post('/users/login', userCred);
+
+
+        } catch (e) {
+            throw e;
         }
     }
 }

@@ -5,16 +5,17 @@ import { AuthModel } from "./types";
 
 export default function buildAuthModelCreator({
     codeErrors,
-}: { codeErrors: IApplicationErrorsCodes }) {
+}: {
+    codeErrors: IApplicationErrorsCodes
+}) {
     return function createAuthModel(authModel: AuthModel): AuthModel {
         const {
             username,
-            email,
             password,
         } = authModel;
         var errorsDefinder = createErrorsDefinder();
 
-        if (!username || !email) {
+        if (!username) {
             errorsDefinder.setError('model', codeErrors.STRING_IS_REQUIRED, 'Username or email is required');
         }
 

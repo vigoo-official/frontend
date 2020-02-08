@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route as ReactRoute, Switch } from "../frameworks/site/pages/node_modules/react-router-dom";
+import { Redirect, Route as ReactRoute, Switch } from "react-router-dom";
 import { Redirect as RedirectType, Route, UiRouteProps } from "./types";
 
 export const UiView = (props: UiRouteProps) => {

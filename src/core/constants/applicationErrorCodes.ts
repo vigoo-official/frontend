@@ -1,4 +1,4 @@
-import { IApplicationErrorsCodes } from "../interfaces/IApplicationErrorsCodes";
+import { IApplicationErrorsCodes } from "../interfaces";
 
 export class ApplicationErrorCodes implements IApplicationErrorsCodes {
     get STRING_IS_REQUIRED(): number { return 1; }
