@@ -10,13 +10,13 @@ export default function buildAuthModelCreator({
 }) {
     return function createAuthModel(authModel: AuthModel): AuthModel {
         const {
-            username,
+            email,
             password,
         } = authModel;
         var errorsDefinder = createErrorsDefinder();
 
-        if (!username) {
-            errorsDefinder.setError('model', codeErrors.STRING_IS_REQUIRED, 'Username or email is required');
+        if (!email) {
+            errorsDefinder.setError('email', codeErrors.STRING_IS_REQUIRED, 'Email or email is required');
         }
 
         if (!password)

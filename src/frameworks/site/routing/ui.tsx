@@ -8,12 +8,12 @@ export const UiView = (props: UiRouteProps) => {
 
     return (
         <Switch>
-            {routes.map(route => {
+            {routes.map((route, index) => {
                 return (
-                    <ReactRoute exact={route.exact} key={route.path}
+                    <ReactRoute exact={route.exact} key={index}
                         path={route.path}
                         render={(props: any) => {
-                            return <route.component {...props} routes={route.children || []} />
+                            return <route.component {...props} key={index} routes={route.children || []} />
                         }}
                     />
                 );
